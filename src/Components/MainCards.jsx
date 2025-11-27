@@ -6,7 +6,7 @@ import {
     PlusCircle,
 } from "lucide-react";
 import StatsCard from "./StatsCard";
-import { holdings } from "../data/cryptoData"; 
+import { holdings } from "../Data/cryptodata"; 
 import { useState } from "react";
 
 function MainContent({ onNavigate }) {
