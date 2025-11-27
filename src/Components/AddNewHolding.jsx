@@ -49,8 +49,34 @@ function AddnewHolding({onSubmit, onCancel}) {
             ...prev,
             [name]: value,
         }));
+        //logic to clear the tuping will be here //
     };
+    // Function for handling the blur effect on the form will appear here //
 
+    //function for color selection will be here //
+    const handleColorSelect = (color) => {
+        setFormData (prev => ({
+            ...prev,
+            color: color,
+        }));
+    }
+
+
+    // this function will handle the form submission //
+    const handleSubmitForm = (e) => {
+        e.preventDefault();
+        // form validation logic will be here //
+
+        //data submission preparation //
+        const submissionData = {
+            name: formData.name.trim(),
+            symbol: formData.symbol.trim().toUpperCase(),
+            amount: parseFloat(formData.amount),
+            purchasePrice: parseFloat (formData.purchasePrice),
+            currentPrice: parseFloat (formData.currentPrice),
+            color: formData.color,
+        }
+    };
     return (
         <div></div>
     )
