@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import NavigationBar from "../Components/NavigationBar"
 import { allStyles } from '../styles/Styles';
 import MainContent from "../Components/MainCards"
-import { holdings } from '../data/cryptoData';
+import { holdings } from '../Data/cryptodata';
 import PortfolioComponent from '../Components/Portfolio';
 
 function Cryptodashboard() {
